@@ -571,172 +571,25 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
-.container {
-	width: 100%;
-}
-@media (min-width: 640px) {
-
-	.container {
-		max-width: 640px;
-	}
-}
-@media (min-width: 768px) {
-
-	.container {
-		max-width: 768px;
-	}
-}
-@media (min-width: 1024px) {
-
-	.container {
-		max-width: 1024px;
-	}
-}
-@media (min-width: 1280px) {
-
-	.container {
-		max-width: 1280px;
-	}
-}
-@media (min-width: 1536px) {
-
-	.container {
-		max-width: 1536px;
-	}
-}
-.col-span-2 {
-	grid-column: span 2 / span 2;
-}
-.col-span-1 {
-	grid-column: span 1 / span 1;
-}
-.m-8 {
-	margin: 2rem;
-}
-.m-auto {
-	margin: auto;
-}
-.mx-2 {
-	margin-left: 0.5rem;
+.mr-2 {
 	margin-right: 0.5rem;
 }
-.mx-0 {
-	margin-left: 0px;
-	margin-right: 0px;
+.inline {
+	display: inline;
 }
-.mb-4 {
-	margin-bottom: 1rem;
+.h-6 {
+	height: 1.5rem;
 }
-.mt-2 {
-	margin-top: 0.5rem;
-}
-.grid {
-	display: grid;
-}
-.h-64 {
-	height: 16rem;
-}
-.w-64 {
-	width: 16rem;
-}
-.max-w-sm {
-	max-width: 24rem;
-}
-.grid-cols-4 {
-	grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-3 {
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.flex-col {
-	flex-direction: column;
-}
-.items-center {
-	align-items: center;
-}
-.rounded {
-	border-radius: 0.25rem;
-}
-.rounded-2xl {
-	border-radius: 1rem;
-}
-.border-4 {
-	border-width: 4px;
-}
-.border-green-800 {
-	--tw-border-opacity: 1;
-	border-color: rgba(6, 95, 70, var(--tw-border-opacity));
-}
-.border-gray-400 {
-	--tw-border-opacity: 1;
-	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
-}
-.border-gray-300 {
-	--tw-border-opacity: 1;
-	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+.w-6 {
+	width: 1.5rem;
 }
 .bg-green-50 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
 }
-.bg-green-400 {
-	--tw-bg-opacity: 1;
-	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
-}
-.bg-green-300 {
-	--tw-bg-opacity: 1;
-	background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
-}
-.bg-gray-50 {
-	--tw-bg-opacity: 1;
-	background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
-}
 .object-center {
 	-o-object-position: center;
 	   object-position: center;
-}
-.p-4 {
-	padding: 1rem;
-}
-.px-3 {
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
-}
-.py-1 {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-}
-.px-0 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-.text-left {
-	text-align: left;
-}
-.font-sans {
-	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.text-lg {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-.text-6xl {
-	font-size: 3.75rem;
-	line-height: 1;
-}
-.font-medium {
-	font-weight: 500;
-}
-.font-bold {
-	font-weight: 700;
-}
-.text-gray-800 {
-	--tw-text-opacity: 1;
-	color: rgba(31, 41, 55, var(--tw-text-opacity));
-}
-.text-green-400 {
-	--tw-text-opacity: 1;
-	color: rgba(52, 211, 153, var(--tw-text-opacity));
 }
 
 .cardMain {
@@ -754,8 +607,6 @@ video {
 }
 
 .imgMain {
-	height: 16rem;
-	width: 16rem;
 	border-radius: 1rem;
 	border-width: 4px;
 	--tw-border-opacity: 1;
@@ -770,11 +621,36 @@ video {
 	margin-bottom: 1rem;
 	text-align: left;
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-size: 3.75rem;
-	line-height: 1;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 	font-weight: 700;
 	--tw-text-opacity: 1;
 	color: rgba(52, 211, 153, var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+
+	.titleMain {
+		font-size: 3rem;
+		line-height: 1;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.titleMain {
+		font-size: 3.75rem;
+		line-height: 1;
+	}
+}
+
+.priceMain {
+	margin-top: -0.5rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	letter-spacing: 0.05em;
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
 .buttonContainer {
@@ -787,17 +663,84 @@ video {
 	padding-right: 0px;
 }
 
-.hover\:bg-green-500:hover {
-	--tw-bg-opacity: 1;
-	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
-}
-
-.hover\:bg-green-400:hover {
+.buyButton {
+	grid-column: span 2 / span 2;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.25rem;
+	--tw-border-opacity: 1;
+	border-color: rgba(6, 95, 70, var(--tw-border-opacity));
 	--tw-bg-opacity: 1;
 	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	--tw-text-opacity: 1;
+	color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
+.buyButton:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.fuckButton {
+	grid-column: span 1 / span 1;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.25rem;
+	--tw-border-opacity: 1;
+	border-color: rgba(6, 95, 70, var(--tw-border-opacity));
+	--tw-bg-opacity: 1;
+	background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 500;
+	--tw-text-opacity: 1;
+	color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+
+.fuckButton:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+#cardContainer {
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+@media (min-width: 640px) {
+
+	#cardContainer {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 768px) {
+
+	#cardContainer {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+
+	#cardContainer {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
 }

@@ -7,13 +7,29 @@
 }
 
 .imgMain {
-    @apply h-64 w-64 object-contain object-center border-gray-400 rounded-2xl border-4
+    @apply object-contain object-center border-gray-400 rounded-2xl border-4
 }
 
 .titleMain {
-    @apply text-left font-sans text-6xl font-bold text-green-400 mb-4
+    @apply text-left font-sans text-4xl lg:text-6xl md:text-5xl font-bold text-green-400 mb-4
+}
+
+.priceMain {
+    @apply text-gray-500 text-lg tracking-wider -mt-2
 }
 
 .buttonContainer {
     @apply grid grid-cols-3 mt-2 mx-0 px-0
+}
+
+.buyButton {
+    @apply col-span-2 mx-2 px-3 font-medium py-1 rounded border-green-800 bg-green-400 hover:bg-green-500 text-gray-800 hover:text-white text-lg
+}
+
+.fuckButton {
+    @apply col-span-1 mx-2 px-3 font-medium py-1 rounded border-green-800 bg-green-300 hover:bg-green-400 text-gray-800 hover:text-white text-lg
+}
+
+#cardContainer {
+    @apply grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 m-8 gap-4
 }
