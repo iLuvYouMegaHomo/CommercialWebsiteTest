@@ -591,11 +591,32 @@ video {
 	-o-object-position: center;
 	   object-position: center;
 }
+.buyButton {
+	--tw-bg-opacity: 1;
+	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+.fuckButton {
+	--tw-bg-opacity: 1;
+	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+#taskbarContainer {
+	display: inline-block;
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.taskbarButton {
+	font-weight: 700;
+}
 
 .cardMain {
 	margin: auto;
 	max-width: 24rem;
-	flex-direction: column;
 	align-items: center;
 	border-radius: 0.25rem;
 	border-width: 4px;
@@ -607,12 +628,12 @@ video {
 }
 
 .imgMain {
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 1rem;
 	border-width: 4px;
 	--tw-border-opacity: 1;
 	border-color: rgba(156, 163, 175, var(--tw-border-opacity));
-	-o-object-fit: contain;
-	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
@@ -621,27 +642,9 @@ video {
 	margin-bottom: 1rem;
 	text-align: left;
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-size: 2.25rem;
-	line-height: 2.5rem;
 	font-weight: 700;
 	--tw-text-opacity: 1;
 	color: rgba(52, 211, 153, var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-
-	.titleMain {
-		font-size: 3rem;
-		line-height: 1;
-	}
-}
-
-@media (min-width: 1024px) {
-
-	.titleMain {
-		font-size: 3.75rem;
-		line-height: 1;
-	}
 }
 
 .priceMain {
@@ -654,19 +657,17 @@ video {
 }
 
 .buttonContainer {
-	margin-left: 0px;
-	margin-right: 0px;
 	margin-top: 0.5rem;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	padding-left: 0px;
-	padding-right: 0px;
+	-moz-column-gap: 0px;
+	     column-gap: 0px;
 }
 
 .buyButton {
 	grid-column: span 2 / span 2;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 	border-radius: 0.25rem;
 	--tw-border-opacity: 1;
 	border-color: rgba(6, 95, 70, var(--tw-border-opacity));
@@ -683,17 +684,13 @@ video {
 	color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
-.buyButton:hover {
-	--tw-bg-opacity: 1;
-	background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
-	--tw-text-opacity: 1;
-	color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
 .fuckButton {
 	grid-column: span 1 / span 1;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	border-radius: 0.25rem;
 	--tw-border-opacity: 1;
 	border-color: rgba(6, 95, 70, var(--tw-border-opacity));
@@ -710,13 +707,6 @@ video {
 	color: rgba(31, 41, 55, var(--tw-text-opacity));
 }
 
-.fuckButton:hover {
-	--tw-bg-opacity: 1;
-	background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
-	--tw-text-opacity: 1;
-	color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
 #cardContainer {
 	margin: 2rem;
 	display: grid;
@@ -724,23 +714,55 @@ video {
 	gap: 1rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 640px){
+    .imgMain {
+		height: 12rem;
+	}
+    .imgMain {
+		width: 12rem;
+	}
 
-	#cardContainer {
+    .titleMain {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+    #cardContainer {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
 @media (min-width: 768px) {
+    .imgMain {
+		height: 16rem;
+	}
+    .imgMain {
+		width: 16rem;
+	}
 
-	#cardContainer {
+    .titleMain {
+		font-size: 3rem;
+		line-height: 1;
+	}
+    #cardContainer {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 
 @media (min-width: 1024px) {
+    .imgMain {
+		height: 18rem;
+	}
+    .imgMain {
+		width: 18rem;
+	}
 
-	#cardContainer {
+    .titleMain {
+		font-size: 4.5rem;
+		line-height: 1;
+	}
+    #cardContainer {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 }
+
